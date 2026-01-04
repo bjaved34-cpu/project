@@ -11,7 +11,6 @@ const Home = ({showNotification}) => {
         <Nav/>
         <Hero/>
         <CategoryMainPage/>
-        <h1>asdas</h1>
         <BestSellingProducts showNotification={showNotification}/>
         <Footer/>
       </div>
