@@ -12,6 +12,7 @@ const Home = ({showNotification}) => {
         <Hero/>
         <CategoryMainPage/>
         <BestSellingProducts showNotification={showNotification}/>
+        <h1>asdsada</h1>
         <Footer/>
       </div>
       
