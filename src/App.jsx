@@ -21,7 +21,7 @@ function App() {
     <>
     <Notification notification={notification} />
       <Routes>
-       <Route path="/Shop-Swift" element={<Home showNotification={showNotification} />} />
+       <Route path="/" element={<Home showNotification={showNotification} />} />
         <Route path="/Product" element={<Product showNotification={showNotification} />} />
         <Route path="/ProductDetail" element={<ProductDetail showNotification={showNotification} />} />
         <Route path="/Category" element={<Category showNotification={showNotification} />} />
