@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "../../redux/userSlice";
 import { NavLink } from "react-router-dom";
-import logo from "../../../assets/logo.svg";
+import logo from "../../assets/logo.svg"
 import { useState } from "react";
 const Nav = () => {
   const [open, setOpen] = useState(false);
