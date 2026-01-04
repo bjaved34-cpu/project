@@ -15,7 +15,7 @@ const Nav = () => {
     <>
       <nav className="w-full bg-white shadow-md px-12 py-4 sticky top-0 z-0">
         <div className="flex justify-between items-center">
-          <NavLink to="/"><img src={logo} /></NavLink>
+          <NavLink to="/Shop-Swift"><img src={logo} /></NavLink>
 
           <ul className="hidden md:flex space-x-4 ">
             <NavLink
