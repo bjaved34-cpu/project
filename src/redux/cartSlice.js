@@ -48,9 +48,9 @@ const cartSlice = createSlice({
           state.items = state.items.filter((i) => i.id !== action.payload);
         }
       }
-    },
-  },clearCart:(state)=>{
+    },clearCart:(state)=>{
     state.items= [];
+  },
   },
 });
 

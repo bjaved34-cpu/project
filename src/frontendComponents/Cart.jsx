@@ -1,6 +1,6 @@
 import { useSelector , useDispatch} from "react-redux";
 import Nav from "./components/Nav";
-import { increment, decrement , removeItemFromCart} from "../redux/cartSlice";
+import { increment, decrement , removeItemFromCart, clearCart} from "../redux/cartSlice";
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 const Cart = () => {
@@ -10,7 +10,14 @@ const Cart = () => {
   console.log(items);
 const ttl = Math.round(items.reduce((sum, item) => sum + (item.price * item.quantity), 0));
 
-  const notify = () => toast("Congratulations..! Your order is placed, Thank you");
+  const handleCheckout = () => {
+    toast.success("🎉 Congratulations! Order placed successfully");
+
+    setTimeout(() => {
+      dispatch(clearCart);  
+      navigate("/");      
+    }, 2000);
+  };
   
 
 
@@ -87,7 +94,7 @@ const ttl = Math.round(items.reduce((sum, item) => sum + (item.price * item.quan
             </div>
 
             <button className="mt-6 w-full bg-indigo-600 text-white py-3 rounded-xl hover:bg-indigo-700 transition"
-            onClick={notify}>
+            onClick={handleCheckout}>
               Proceed to Checkout
             </button>
             <ToastContainer />
