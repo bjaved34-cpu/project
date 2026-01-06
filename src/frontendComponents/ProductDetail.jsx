@@ -101,6 +101,7 @@ const ProductDetail = ({showNotification}) => {
                 price={item.price}
                 image={item.image}
                 id={item.id}
+                category={item.category}
               />
             ))}
           </div>

@@ -16,7 +16,7 @@ const BestSellingProducts = ({showNotification}) => {
           </h2>
          <div class="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {limitedProducts.map((p) => (
-            <ProductCard key={p.id} title={p.title} price={p.price} image={p.image} id={p.id} showNotification={showNotification} />
+            <ProductCard key={p.id} title={p.title} price={p.price} image={p.image} id={p.id} showNotification={showNotification} category={p.category} />
           ))}
         </div>
         </div>
